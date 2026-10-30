@@ -355,7 +355,7 @@ form.addEventListener('submit', async e=>{
     adults: yes ? document.querySelector('[data-name=adults]').dataset.val : '0',
     kids:   yes ? document.querySelector('[data-name=kids]').dataset.val : '0',
     phone: yes ? $('#phone').value.trim() : '',
-    notes: yes ? $('#notes').value.trim() : 
+    notes: yes ? $('#notes').value.trim() : '',
   };
   const btn = $('#sendBtn'); btn.disabled = true; btn.textContent = 'Sending… 提交中…';
   if(CONFIG.FORM_ACTION){
